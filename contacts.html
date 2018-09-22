@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Контактировать нас</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <hr>
+    <h1>Контакты</h1> Наша почта: ronaldstore123@store.com
+    <br> Наш телефон: 123-456-7890
+    <br>
+    <br>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
+    <div id="map" style="width: 600px; height: 400px"></div>
+        <script type="text/javascript">
+  ymaps.ready(init);
+    var myMap,
+        myPlacemark;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [44.312551, -78.332067],
+            zoom: 7
+        });
+
+        myPlacemark = new ymaps.Placemark([44.312551, -78.332067], { hintContent: 'Мой магазин', balloonContent: 'Он в этом городе' 
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+</script>
+   <br>
+    
+    <h3>Либо заполните анкету и мы с вами свяжемся как можно скорее</h3>
+    <form action="#"> Ваше имя:
+        <input type="text" class="input" placeholder="Ваше имя">
+        <br> Ваша почта:
+        <input type="email" class="input" placeholder="Ваша почта">
+        <br> Ваш пол:
+        <br> М
+        <input type="radio" name="pol">
+        <br> Ж
+        <input type="radio" name="pol">
+        <br> Тема разговора:
+        <br>
+        <input type="text" class="input" style="width:1210px;" placeholder="Тема разговора">
+        <br>
+        <input type="submit" value="Отправить!">
+        <input type="reset"> </form>
+    <hr>
+    <p>Все права защищены &copy;&nbsp;2018</p>
+</body>
+
+</html>
