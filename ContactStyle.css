@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,700');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 360px;
+    background-image: url(img/hero-back.png);
+}
+
+.header .logo {
+    margin-left: 98px;
+    margin-top: 63px;
+}
+
+.menu {
+    float: right;
+    margin-right: 211px;
+    margin-top: 67px;
+}
+
+.menu li {
+    float: left;
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #8c8c8c;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 48px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: right;
+    text-decoration: none;
+    display: block;
+    padding: 0 20px;
+}
+
+.menu li a:hover {
+    color: #212121;
+    font-weight: 700;
+    border-bottom: 3px solid black;
+}
+
+.text {
+    width: 469px;
+    margin-top: 171px;
+
+    margin-left: 101px;
+}
+
+.fish {
+    width: 485.52px;
+
+}
+
+
+
+.text h1 {
+    font-family: Montserrat;
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 72px;
+    text-align: left;
+}
+
+
+
+.product-box {
+    padding-top: 60px;
+    padding-left: 98px;
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+}
+
+.product-rel {
+    margin-right: 30px;
+}
+
+.section {
+    display: flex;
+}
+
+.container footer {
+    margin-top: 122px;
+}

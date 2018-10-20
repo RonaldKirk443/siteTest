@@ -1,61 +1,506 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,700');
+
 * {
-    background-color: #f8f8f8
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 800px;
+    background-image: url(img/slider-img.jpg);
+
+}
+
+.header .logo {
+    margin-left: 98px;
+    margin-top: 63px;
+}
+
+.menu {
+    float: right;
+    margin-right: 211px;
+    margin-top: 67px;
 }
 
 .menu li {
-    width: 100px;
-    height: 30px;
-    border: 1.2px solid green;
-    list-style: none
+    float: left;
+    list-style-type: none;
 }
+
 .menu li a {
-    font-family: sans-serif, "times new roman";
-    border: 1.2px solid green;
-}
-
-
-.heading {
-    color:black;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    background: #eaeaea;
-    text-transform: uppercase;
-}
-
-.short {
-    color: #707070;
+    color: #8c8c8c;
     font-size: 14px;
-    font-style: italic;
-    line-height: 16px; 
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 48px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: right;
+    text-decoration: none;
+    display: block;
+    padding: 0 20px;
 }
 
-.long {
-    color: #484343;
-    font-size: 16px;
-    font-weight: 400;
+.menu li a:hover {
+    color: #212121;
+    font-weight: 700;
+    border-bottom: 3px solid black;
+}
+
+.text {
+    width: 469px;
+    margin-top: 288px;
+    margin-left: 98px;
+
+}
+
+.fish{
+    width: 485.52px;
+}
+
+.text h3 {
+    color: #43a047;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 22px;
+
+}
+
+.text h1 {
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 72px;
+    margin-bottom: 34px;
+
+
+}
+
+.text p {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
     line-height: 24px;
+    margin-bottom: 32px;
+
+}
+
+.text a {
+    display: block;
+    background: #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    text-decoration: none;
+    border-radius: 22px;
+    text-align: center;
+    line-height: 45px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+
+
+
+}
+
+.text a:hover {
+    background: #ffffff url(img/arrow.png) no-repeat 173px 16px;
+}
+
+.menu-product-box {
+    list-style-type: none;
+    display: flex;
+    float: left;
+    margin-top: 120px;
+    margin-left: 107px;
+}
+
+.menu-product-box li {}
+
+.menu-product-box li a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 36px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    margin-right: 31px;
+    border-bottom: 4px transparent;
+}
+
+.button-explore {
+
+    display: flex;
+    float: right;
+    margin-top: 120px;
+    margin-right: 118px;
+}
+
+.button-explore a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+
+.product-box {
+
+    padding-top: 60px;
+    padding-left: 98px;
+    display: flex;
+    float: left;
+
+    flex-wrap: wrap;
+
+
+}
+
+.product-rel {
+    margin-right: 30px;
+}
+
+.promo-left {
+    background-image: url(img/promo-img1.jpg);
+    width: 683px;
+    height: 683px;
+}
+
+.promo-right {
+    width: 683px;
+    height: 683px;
+    background-image: url(img/promo-img.jpg);
+}
+
+.promo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.PROMO-text {
+    padding-top: 228px;
+    padding-left: 51px;
+}
+
+.PROMO-text h3 {
+    color: #1e88e5;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 48px;
+    /* Приближение из-за подстановки шрифтов */
     text-align: left;
 }
 
-
-
-.specs {
-    color: black;
-    font-style:oblique;
-    font-family: cursive;
-    list-style: square;
+.PROMO-text h1 {
+    color: #212121;
+    font-size: 36px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
 }
 
-.input {
-    width: 300px;
-    height: 1.1pc;
-    color: black;
+.PROMO-text p {
+    color: #6c6c6c;
+    font-size: 13.99px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    transform: scaleY(1.0022);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+
+.PROMO-text a {
+    display: block;
+    background: #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    text-decoration: none;
+    border-radius: 22px;
+    text-align: center;
+    line-height: 45px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 34px;
+
+
+
+}
+
+.PROMO-text a:hover {
+    background: #ffffff url(img/arrow.png) no-repeat 173px 16px;
+}
+
+.section {
+    display: flex;
+}
+
+.slider {
+    height: 800px;
+    background-image: url(img/slider.jpg);
+    margin-top: 120px;
+}
+
+.slider-text {
+    width: 469px;
+
+    margin-left: 98px;
+}
+
+.slider-text h3 {
+    color: #e53935;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 48px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    padding-top: 99px;
+    margin-bottom: 22px;
+}
+
+
+
+
+.slider-text h1 {
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 72px;
+    margin-bottom: 34px;
+
+
+}
+
+.slider-text p {
+    color: #6c6c6c;
     font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 32px;
+
 }
 
-.img {
-    padding: 4px;
-    background-color: black;
+.slider-text a {
+    display: block;
+    background: #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    text-decoration: none;
+    border-radius: 22px;
+    text-align: center;
+    line-height: 45px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+
+
+
 }
+
+.slider-text a:hover {
+    background: #ffffff url(img/arrow.png) no-repeat 173px 16px;
+}
+
+.promo-left_n {
+    display: flex;
+    background-image: url(img/product-1-lg.jpg);
+    width: 570px;
+    height: 570px;
+    
+
+}
+
+.promo-right-n {
+    display: flex;
+    float: left;
+    width: 670px;
+    flex-wrap: wrap;
+    
+
+}
+
+.promo_n {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.slider-mobile {
+    height: 516px;
+    background-image: url(img/back-img.jpg);
+    margin-top: 120px;
+}
+
+.slider-text-mobile {
+
+    margin-left: 106px;
+}
+
+.slider-text-mobile h3 {
+    color:
+        #6c6c6c;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 48px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    padding-top: 125px;
+    margin-bottom: 22px;
+}
+
+
+
+
+.slider-text-mobile h1 {
+    color: #212121;
+    font-size: 62px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 72px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 26px;
+
+
+}
+
+.slider-text-mobile p {
+    color: #6c6c6c;
+    font-size: 22px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 32px;
+
+}
+
+
+
+.slider-text-mobile li {
+    float: left;
+    list-style-type: none;
+}
+
+.slider-text-mobile li a {
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #f7f7f7;
+    height: 384px;
+}
+
+footer {
+
+    height: 2338x;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer h3 {
+    color: #6c6c6c;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+footer p {
+    color:
+        #212121;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 22px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-decoration: none;
+}
+
+.info li {
+    list-style-type: none;
+
+
+}
+
+.info li a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 26px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright,
+.privacy {
+    color: #6c6c6c;
+    font-size: 12px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 26px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    padding-bottom: 38px;
+}
+
+
+.info {
+    column-count: 3;
+   
+    
+}
+/* footer .info h3 {
+width: 370px;
+} */
+
+   
+   
+
+.img-button {
+    display: none;
+}
+
+.product-img4, .product-img5{
+    margin-top: 27px;
+}
+
+.contact-header{
+    
+}
+
+
